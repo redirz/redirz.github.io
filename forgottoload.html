@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whoops! Javascript is off.</title>
+</head>
+<body>
+    <h1>Whoops! It looks like Javascript is disabled in your browser.</h1>
+    <p>This site relies on Javascript to function properly. Please enable Javascript and <button id="tryagain">try again</button>.</p>
+    <script>
+        document.getElementById('tryagain').addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
