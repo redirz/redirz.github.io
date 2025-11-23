@@ -9,15 +9,13 @@
     <a href="forgottoload.html">Click here if you are not redirected automatically</a>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('a').style.display = 'none';
+            let params = new URLSearchParams(window.location.search);
+            let target = params.get('p');
+            if (target) {
+                window.location.href = `https://scratch.mit.edu/projects/${target}`;
+            } 
+            // document.querySelector('a').style.display = 'none';
         });
-        let params = new URLSearchParams(window.location.search);
-        let target = params.get('p');
-        if (target) {
-            window.location.href = `https://scratch.mit.edu/projects/${target}`;
-        } else {
-            window.location.href = 'forgottoload.html';
-        }
     </script>
 </body>
 </html>
