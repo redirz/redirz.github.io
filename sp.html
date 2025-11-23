@@ -12,7 +12,7 @@
             document.querySelector('a').style.display = 'none';
         });
         let params = new URLSearchParams(window.location.search);
-        let target = params.get('proj');
+        let target = params.get('p');
         if (target) {
             window.location.href = `https://scratch.mit.edu/projects/${target}`;
         } else {
