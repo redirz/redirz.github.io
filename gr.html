@@ -12,8 +12,8 @@
             document.querySelector('a').style.display = 'none';
         });
         let params = new URLSearchParams(window.location.search);
-        let target = params.get('user');
-        let repo = params.get('repo');
+        let target = params.get('u');
+        let repo = params.get('r');
         if (target && repo) {
             window.location.href = `https://github.com/${target}/${repo}`;
         } else {
